@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url('MacBook\ Pro\ 14_\ -\ 3.png'); 
+}
+
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 10px;
+    stroke-width: 1px;
+}
+
+button {
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    background: #cecece;
+    color: rgb(95, 95, 95);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+#displayedImage {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+
+
+@font-face {
+    font-family: baunk;
+    src: url("/Users/haz/Documents/CORE 2 Interaction/PART-3/Baunk.ttf");
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    padding: 2%;
+    font-family: baunk;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.result{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-grow: 3;
+
+}
+
+.inputsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    flex-grow: 2;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.options4input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.STEADY{
+    background-color: #48E9E8;
+}
+
+.PSYCHADELIC{
+    background-color: #840791;
+    color: #fff;
+}
+
+.CHATHARTIC{
+    background-color: #7DB300;
+}
+
+.PANIC{
+    background-color: #DED71A;
+}
+
+.BITTER{
+    background-color: #B30000;
+    color: #fff;
+}
+
+img{
+    display: none;
+}
+
+@media (max-width: 844px) {
+
+    body{
+        width: 90%;
+        height: auto;
+        background-size: 100vw;
+        background-image: url('MacBook\ Pro\ 14_\ -\ 3.png');
+    }
+
+    .title {
+      font-size: 40px;
+      padding: 1rem;
+    }
+    
+    .result {
+      height: auto;
+      margin: 10px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    
+    #displayedImage {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+    }
+    
+    .inputsection {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 10px;
+      width: 90%;
+      height: 100%;
+    }
+    
+    .options4input {
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+    }
+    
+    .option {
+      width: 80%;
+      margin: 0.5rem 0;
+    }
+    
+    input,
+    button {
+      width: 90%;
+      margin: 0.5rem auto;
+      font-size: 16px;
+    }
+  }
+  
